@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Calculator app</title>
+  <script src="script.js" defer></script>
+</head>
+<body id="calculatorApp">
+  <div class="calculator">
+    <div class="calculator__header">
+      <h1 class="logo">calc</h1>
+      <div class="theme">
+        <span class="theme__title">Theme</span>
+        <div class="theme__switcher">
+          <div class="switcher__titles">
+            <div class="titles__title">1</div>
+            <div class="titles__title">2</div>
+            <div class="titles__title">3</div>
+          </div>
+          <div class="switcher__buttons-container">
+            <div id="theme1" class="switcher__button"></div>
+            <div id="theme2" class="non-visible switcher__button"></div>
+            <div id="theme3" class="non-visible switcher__button"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="calculator__result">
+      <p id="result">0</p>
+    </div>
+    <div class="calculator__buttons">
+      <div class="main__buttons">
+        <div class="buttons__button value-button"><span>7</span></div>
+        <div class="buttons__button value-button"><span>8</span></div>
+        <div class="buttons__button value-button"><span>9</span></div>
+        <div id="del" class="text-accent accent-button buttons__button"><span>DEL</span></div>
+        <div class="buttons__button value-button" ><span>4</span></div>
+        <div class="buttons__button value-button"><span>5</span></div>
+        <div class="buttons__button value-button"><span>6</span></div>
+        <div class="buttons__button value-button"><span>+</span></div>
+        <div class="buttons__button value-button"><span>1</span></div>
+        <div class="buttons__button value-button"><span>2</span></div>
+        <div class="buttons__button value-button"><span>3</span></div>
+        <div class="buttons__button value-button"><span>-</span></div>
+        <div class="buttons__button value-button"><span>.</span></div>
+        <div class="buttons__button value-button"><span>0</span></div>
+        <div class="buttons__button value-button"><span>/</span></div>
+        <div class="buttons__button value-button"><span>*</span></div>
+      </div>
+      <div class="coa__buttons">
+        <div id="reset" class="text-accent accent-button buttons__button"><span >RESET</span></div>
+        <div id="submit" class="text-accent coa-clr buttons__button"><span>=</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>   
